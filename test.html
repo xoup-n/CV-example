@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV in CSS2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse; 
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            
+        }
+        table tr th div
+        {
+
+            text-align: center; 
+            vertical-align: middle; 
+        }
+        .theme
+        {
+            border-right:2px solid #a8bc39;
+        }
+        table tr th div img
+        {
+            width:40%;
+        }
+        table tr td h2 img
+        {
+            width:10%;
+            vertical-align: middle; 
+            
+        }
+        table tr td h2
+        {
+            vertical-align: middle; 
+            
+        }
+        .personal_skills
+        {
+            height: 80px;
+            vertical-align: top; 
+            border-right:2px solid #a8bc39;
+        }
+        .languages_knowledge
+        {
+            height: 80px;
+            font-weight: 600;
+            margin:0;
+            border-right:2px solid #a8bc39;
+        }
+        .languages_knowledge p
+        {
+            margin:0;
+
+        }
+        .languages_knowledge p img
+        {
+            width:25px;
+            float:left;        
+            margin-right:15px;    
+            margin-top:5px;
+        }
+        .personal_info
+        {
+            width: 70%;
+            vertical-align: top; 
+        }
+        .personal_info h1
+        {
+            margin: 15px 0 0 0;
+        }
+
+        .personal_info h4
+        {
+            margin: 5px;
+            color:#a8bc39;
+        }
+        .personal_info p
+        {
+            margin: 20px 5px;
+        }
+        .romb
+        {
+            width:4%;
+        }
+        .not_bold
+        {
+            font-weight: 100;
+        }
+        .education
+        {
+            padding:0 10px;
+            vertical-align: middle; 
+        }
+        .education h3
+        {
+            margin:0;
+        }
+        .education p
+        {
+            color:#a8bc39;
+            font-style: italic;
+            vertical-align: bottom;
+            margin:10px 0 0 0; 
+        }
+        .courses p
+        {
+            margin:0;
+        }
+        .courses
+        {
+            margin: 0 10px;
+
+        }
+        .interests p
+        {
+            margin:5px;
+            border: 2px solid rgb(194, 193, 193); 
+            padding: 10px;
+            float:left;
+            vertical-align: top; 
+            font-weight: 600;
+        }
+        .interests
+        {
+            padding:0 15% 0 0;
+            vertical-align: top; 
+            border-right:2px solid #a8bc39;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <table>
+            <tr>
+                <th style="width: 30%;border-right:2px solid #a8bc39;"><div><img src="images/avatar.png" alt="ava"></div> </th>
+                <th class ="personal_info">
+                    <h1>Test User</h1>
+                    <h4>Maniküre- und Pediküre Meister</h4>
+                    <p>Meister der Maniküre und Pediküre, der verschiedene Techniken beherrscht und über mehr als 5 Jahre Berufserfahrung verfügt.</p>
+                    <table class="no_border">
+                        <tr>
+                            <th>&#xf2b6; test.user@gmail.com</th>
+                            <th>&#xf10b; +491721831273</th>
+                        </tr>
+                        <tr>
+                            <th>&#xf3c5; Essen, Germany</th>
+                            <th>&#xf1d8; instagram.com/test_user</th>
+                        </tr>
+                    </table>
+                </th>
+            </tr>
+            <tr>
+                <td class="theme"><h2><img src="images/marking_rhombus.png" alt="marking_rhombus">SKILLS</h2></td>
+                <td><h2><img class="romb" src="images/marking_rhombus.png" alt="marking_rhombus">EDUCATION</h2></td>
+            </tr>
+            <tr>
+                <td class="personal_skills">Skill</td>
+                <td class="education">
+                    <h3>Zentrum "Svit Krasa"</h3>
+                    <h3 class="not_bold">Spezialität - Maniküre- und Pediküre-Meister</h3>
+                    <p>Courses</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="theme"><h2><img src="images/marking_rhombus.png" alt="marking_rhombus">LANGUAGES</h2></td>
+                <td>
+                    <table class="courses" >
+                        <tr>
+                            <th><p>&bull; Nageldesign. Verschiedene Arten von Design</p></th>
+                            <th><p>&bull; Hardware Maniküre und Pediküre</p></th>
+                        </tr>
+                        <tr>
+                            <th><p>&bull; Grundkurs Maniküre und Pediküre.Meister des Nageldesigns.</p></th>
+                            <th><p>&bull; Nagelverlängerungskurs.</p></th>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="languages_knowledge">
+                    <p>Ukrainisch</p>
+                    <p><img src="images/green_dot.png" alt="green dot"></p>
+                    <p><img src="images/green_dot.png" alt="green dot"></p>
+                    <p><img src="images/green_dot.png" alt="green dot"></p>
+                    <p><img src="images/green_dot.png" alt="green dot"></p>
+                    <p><img src="images/green_dot.png" alt="green dot"></p>
+                </td>
+                <td class="education">
+                    <h3>Aufbauschulung "Kombi in 10 Minuten"</h3>
+                    <h3 class="not_bold"> Spezialitat - Maniküre- und Pediküre-Meister</h3>
+                    <p>Courses</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="languages_knowledge">
+                    <p>English</p>
+                    <p><img src="images/green_dot.png" alt="green dot"></p>
+                    <p><img src="images/green_dot.png" alt="green dot"></p>
+                    <p><img src="images/green_dot.png" alt="green dot"></p>
+                    <p><img src="images/black_dot.png" alt="green dot"></p>
+                    <p><img src="images/black_dot.png" alt="green dot"></p>
+                </td>
+                <td><table class="courses" >
+                    <tr>
+                        <th><p>&bull; Fußbehandlung. Neue Technologie.Hardware-Technologie</p></th>
+                        <th><p>&bull; Neue Technologien zur Verarbeitung der Nagelhaut bei Berührung. Schneid-und Beschlagtechnik</p></th>
+                    </tr>
+                </table></td>
+            </tr>
+            <tr>
+                <td class="languages_knowledge">
+                    <p>Deutsch</p>
+                    <p><img src="images/green_dot.png" alt="green dot"></p>
+                    <p><img src="images/green_dot.png" alt="green dot"></p>
+                    <p><img src="images/black_dot.png" alt="green dot"></p>
+                    <p><img src="images/black_dot.png" alt="green dot"></p>
+                    <p><img src="images/black_dot.png" alt="green dot"></p>
+                </td>
+                <td class="education">
+                    <h3>Meister von Betriebswirtschaftslehre: Rechnungswesen und Wirtschaftsprüfung</h3>
+                    <h3 class="not_bold"> Kharkiv State Academy of Railway Transport</h3>
+                    <p>Kharkiv, Ukraine</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="languages_knowledge">
+                    <p>Russisch</p>
+                    <p><img src="images/green_dot.png" alt="green dot"></p>
+                    <p><img src="images/green_dot.png" alt="green dot"></p>
+                    <p><img src="images/green_dot.png" alt="green dot"></p>
+                    <p><img src="images/green_dot.png" alt="green dot"></p>
+                    <p><img src="images/green_dot.png" alt="green dot"></p>
+                </td>
+            </tr>
+            <tr>
+                <td class="theme"><h2><img src="images/marking_rhombus.png" alt="marking_rhombus">INTERESTS</h2></td>
+                <td><h2><img class="romb" src="images/marking_rhombus.png" alt="marking_rhombus">WORK EXPERIENCE</h2></td>
+            </tr>
+            <tr>
+                <td class="interests"> <p>Shopping</p> <p>Kunst</p> <p>Foto</p> <p>Asthetik</p></td>
+                <td class="education">
+                    <h3>Maniküre- und Pediküre Meister</h3>
+                    <h3 class="not_bold"> Schönheitssalon "Virtuell"</h3>
+                    <p>06/2017 - 09/2019</p>
+                    <p>Achievements/Tasks</p>
+                    <table>
+                        <tr>
+                            <th>&bull; Techniken, um Nägel zu dekorieren und innen die notwendige Form zu geben.Moderne Methoden zum Verzieren von Nägeln mit Hilfe von natürlichen Pflanzen,Steinen und Materialien</th>
+                        </tr>
+                        <tr>
+                            <th>&bull; Alle Arten von Designs. Französisch, Reiben, Stempeln, Farbverlauf, Folie, Schieber, Hauchzwirn. Studium von Modetrends und Entwicklungen im Nageldesign </th>
+                        </tr>
+                        <tr>
+                            <th>&bull; Regeln für den Betrieb von Werkzeugen und Geräten, Lagerung, Art und Verwendungszweck. Zubereitungen und ihre Eigenschaften, Stoffarten, Verbrauchsmengen und Verwendungszweck</th>
+                        </tr>
+                        <tr>
+                            <th>&bull; Aufbau und Erkrankungen von Nägeln und Haut, komplexe Pflege von Händen und Nägeln.</th>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
